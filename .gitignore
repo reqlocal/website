@@ -40,3 +40,4 @@ bun.lockb
 
 # typescript
 next-env.d.ts
+config.bat

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-deep text-slate-200 antialiased;
+}
+
+@layer utilities {
+  .bg-hero-glow {
+    background-image: radial-gradient(
+        ellipse 80% 60% at 50% -30%,
+        rgba(45, 212, 191, 0.18),
+        transparent 55%
+      ),
+      radial-gradient(at 20% 30%, rgba(45, 212, 191, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 20%, rgba(52, 211, 153, 0.06) 0px, transparent 45%);
+  }
+}
+
+/* Syntax-ish highlights inside static code blocks */
+.code-k {
+  @apply text-teal;
+}
+.code-s {
+  @apply text-emerald;
+}
+.code-c {
+  @apply text-slate-500;
+}
+.code-f {
+  @apply text-sky-300;
+}
